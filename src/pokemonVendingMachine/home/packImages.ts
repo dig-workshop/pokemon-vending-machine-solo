@@ -1,4 +1,3 @@
-import { useMemo } from 'react'
 import packVer1 from '../images/pack_ver1.png'
 import packVer2 from '../images/pack_ver2.jpg'
 import packVer3 from '../images/pack_ver3.jpeg'
