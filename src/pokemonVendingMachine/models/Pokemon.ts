@@ -1,4 +1,3 @@
-
 interface PokemonTypeSlot {
     type: PokemonType
 }
@@ -24,4 +23,40 @@ export default interface Pokemon {
     name: string
     types: PokemonTypeSlot[]
     sprites: Sprites
+}
+
+export class PokemonBuilder {
+    id: number = 0
+    name: string = ''
+    types: PokemonTypeSlot[] = []
+    sprites: Sprites = {other: {official_artwork: {front_default: ''}}}
+
+    withId(newValue: number): PokemonBuilder {
+        this.id = newValue
+        return this
+    }
+
+    withName(newValue: string): PokemonBuilder {
+        this.name = newValue
+        return this
+    }
+
+    withTypes(newValue: PokemonTypeSlot[]): PokemonBuilder {
+        this.types = newValue
+        return this
+    }
+
+    withFrontDefaultSprite(newValue: string): PokemonBuilder {
+        this.sprites = {other: {official_artwork: {front_default: newValue}}}
+        return this
+    }
+
+    build(): Pokemon {
+        return {
+            id: this.id,
+            name: this.name,
+            types: this.types,
+            sprites: this.sprites,
+        }
+    }
 }
