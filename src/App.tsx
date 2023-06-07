@@ -6,6 +6,7 @@ import Contents from './Contents'
 import HomeScreen from "./pokemonVendingMachine/home/HomeScreen";
 import MyCardScreen from './pokemonVendingMachine/myCardScreen/MyCardScreen'
 import Pokemon from './pokemonVendingMachine/models/Pokemon'
+import UnpackScreen from './pokemonVendingMachine/unpackScreen/UnpackScreen'
 
 export interface PokemonRepo {
     getMyPokemon(): Pokemon[]
@@ -32,6 +33,9 @@ export default function App(props: AppProps) {
 
             <Routes>
                 <Route path="/" element={<HomeScreen/>}/>
+                <Route path="/unpack"
+                       element={<UnpackScreen pokemonRepo={props.pokemonRepo}/>}
+                />
                 <Route path="/my-card"
                        element={<MyCardScreen pokemonRepo={props.pokemonRepo}/>}
                 />
