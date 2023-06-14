@@ -8,14 +8,17 @@ export default function HomeScreen() {
   return (
     <Contents>
       <h1 className={styles.title}>Pokemon Vending Machine</h1>
-      {packImages.map(elem => {
-        return (
-          <div key={elem.id}>
-            <img src={elem.image} alt={`pack_ver${elem.id}`}/>
-            <button onClick={()=>navigate('/unpack')}>{elem.price}</button>
-          </div>
-        )
-      })}
+      <div className={styles.packContainer}>
+        {packImages.map(elem => {
+          return (
+            <div key={elem.id} className={styles.imageAndPrice}>
+              <img src={elem.image} alt={`pack_ver${elem.id}`} className={styles.packImage}/>
+              <button　className={styles.packPrice} onClick={()=>navigate('/unpack')}>{elem.price
+              }</button>
+            </div>
+          )
+        })}
+      </div>
     </Contents>
   )
 }

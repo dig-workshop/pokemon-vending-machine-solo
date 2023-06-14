@@ -1,9 +1,48 @@
+@import url('https://fonts.googleapis.com/earlyaccess/notosansjp.css');
+
 .title {
   color: #FFFFFF;
   padding-top: 48px;
   margin-top: 0;
   margin-bottom: 0;
-  font-family: "Noto Sans";
+  font-family: "Noto Sans", serif;
   font-weight: bold;
   font-size: 40px;
+}
+
+.packContainer {
+  display: flex;
+  margin-top: 84px ;
+}
+
+.imageAndPrice {
+  margin-left: 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &:first-of-type{
+    margin-left: 0;
+  }
+}
+
+.packImage {
+  width: 186px;
+  height: 364px;
+}
+
+.packPrice {
+  width: 85px;
+  height: 48px;
+  background: #F2F4F7;
+  margin-top: 36px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Noto Sans JP', serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
 }
