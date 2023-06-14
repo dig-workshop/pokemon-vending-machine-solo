@@ -8,15 +8,17 @@ export default function MyCardScreen(props: { pokemonRepo: PokemonRepo }) {
     return (
         <Contents>
             <h1 className={styles.myCardListTitle}>マイカードリスト</h1>
-            <div>全{pokemons.length}枚</div>
+            <div className={styles.myTotalCard}>全{pokemons.length}枚</div>
+            <div className={styles.cardContents}>
             {pokemons.map(pokemon => (
-                <div key={pokemon.id}>
-                    <div>#{pokemon.id}</div>
-                    <div>{pokemon.name}</div>
-                    <div>{pokemon.types[0]?.type.name}</div>
-                    <img src={pokemon.sprites.other.official_artwork.front_default} alt={`pokemonImage${pokemon.id}`}/>
+                <div key={pokemon.id} className={styles.pokemonItem}>
+                    <div className={styles.id}>#{pokemon.id}</div>
+                    <img className={styles.img} src={pokemon.sprites.other.official_artwork.front_default} alt={`pokemonImage${pokemon.id}`}/>
+                    <div className={styles.name}>{pokemon.name}</div>
+                    <div className={styles.types}>{pokemon.types[0]?.type.name}</div>
                 </div>
             ))}
+            </div>
         </Contents>
     )
 }

@@ -22,6 +22,42 @@ export default class NetworkPokemonRepo implements PokemonRepo {
                 .withTypes([{type: {name: "normal"}}])
                 .withFrontDefaultSprite("https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/2.png")
                 .build(),
+            (new PokemonBuilder())
+                .withId(2)
+                .withName("ivysaur")
+                .withTypes([{type: {name: "normal"}}])
+                .withFrontDefaultSprite("https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/2.png")
+                .build(),
+            (new PokemonBuilder())
+                .withId(2)
+                .withName("ivysaur")
+                .withTypes([{type: {name: "normal"}}])
+                .withFrontDefaultSprite("https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/2.png")
+                .build(),
+            (new PokemonBuilder())
+                .withId(2)
+                .withName("ivysaur")
+                .withTypes([{type: {name: "normal"}}])
+                .withFrontDefaultSprite("https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/2.png")
+                .build(),
+            (new PokemonBuilder())
+                .withId(2)
+                .withName("ivysaur")
+                .withTypes([{type: {name: "normal"}}])
+                .withFrontDefaultSprite("https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/2.png")
+                .build(),
+            (new PokemonBuilder())
+                .withId(2)
+                .withName("ivysaur")
+                .withTypes([{type: {name: "normal"}}])
+                .withFrontDefaultSprite("https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/2.png")
+                .build(),
+            (new PokemonBuilder())
+                .withId(2)
+                .withName("ivysaur")
+                .withTypes([{type: {name: "normal"}}])
+                .withFrontDefaultSprite("https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/2.png")
+                .build(),
         ]
     }
 }

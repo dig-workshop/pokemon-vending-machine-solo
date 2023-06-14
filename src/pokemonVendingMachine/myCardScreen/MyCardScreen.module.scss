@@ -1,8 +1,89 @@
+
 .myCardListTitle {
+  width: 320px;
+  height: 48px;
+
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  margin: 48px 0;
   color: #FFFFFF;
-  padding-top: 48px;
-  margin-top: 0;
-  margin-bottom: 0;
-  font-family: "Noto Sans";
-  font-weight: bold;
+}
+
+.myTotalCard {
+  width: 77px;
+  height: 35px;
+  font-family: 'Noto Sans';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 35px;
+
+  color: #FFFFFF;
+}
+
+.cardContents {
+  display: flex;
+  align-items: center;
+  margin-left: 121px;
+  flex-wrap: wrap;
+  column-gap: 28px;
+  row-gap: 48px;
+
+}
+
+.pokemonItem {
+  width: 217px;
+  height: 304px;
+
+  background: #F2F4F7;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 12px;
+  .id {
+    display: flex;
+    margin: 12px 0 0 12px;
+
+    font-family: 'Noto Sans JP';
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 24px;
+
+    text-align: center;
+    color: #041B3E;
+  }
+  .img {
+    display: flex;
+    width: 161px;
+    height: 161px;
+    margin: 0 auto;
+
+  }
+  .name {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+
+    font-family: 'Noto Sans JP';
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 24px;
+
+    text-align: center;
+    color: #041B3E;
+  }
+
+  .types {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+
+    font-family: 'Noto Sans JP';
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 24px;
+
+    text-align: center;
+    color: #041B3E;
+  }
 }
